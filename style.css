@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    padding: 20px;
+}
+
+.container{
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header i{
+    font-size: 45px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+header h1{
+    margin-bottom: 10px;
+}
+
+header p{
+    color: gray;
+}
+
+.expense-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button{
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background: #1d4ed8;
+}
+
+.search,
+.filter{
+    margin-top: 25px;
+}
+
+.search label,
+.filter label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.search input,
+.filter select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.expense-list,
+.total{
+    margin-top: 30px;
+}
+
+.expense-list h2,
+.total h2{
+    margin-bottom: 15px;
+}
+
+#expenseContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.expense-card{
+    border: 1px solid #ddd;
+    border-left: 6px solid #2563eb;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+.expense-card h3{
+    margin-bottom: 10px;
+}
+
+.expense-card p{
+    margin-bottom: 6px;
+}
+
+.deleteBtn{
+    margin-top: 10px;
+    background: crimson;
+}
+
+.deleteBtn:hover{
+    background: darkred;
+}
+
+#totalAmount{
+    font-size: 28px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/*Responsive */
+
+@media(max-width:768px){
+
+    .container{
+
+        margin:20px;
+        padding:20px;
+
+    }
+
+}
